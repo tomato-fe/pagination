@@ -4,6 +4,9 @@
   "description": "jq plug pagination",
   "version": "0.1.0",
   "keywords": ["pagination", "jq"],
-  "files": ["pagination.js","pagination.css"],
+  "files": [
+  	"pagination.css",
+  	"pagination.js"
+  ],
   "license": "MIT"
 }
