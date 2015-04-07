@@ -1,0 +1,88 @@
+/*****************************************************************
+ *
+ * 分页
+ * 
+ * ui-pagination
+ *
+ ****************************************************************/
+.ui-pagination {
+	display: inline-block;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	border-radius: 4px;
+	*zoom: 1;
+}
+
+.ui-pagination:before,
+.ui-pagination:after {
+	display: table;
+	content: " ";
+	line-height: 0;
+}
+
+.ui-pagination:after {
+	clear: both;
+}
+
+.ui-pagination>li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	margin-left: -1px;
+}
+.ui-pagination>li>a,
+.ui-pagination>li>span {
+	display: block;
+	position: relative;
+	padding: 5px 10px;
+	color: #3d3d3d;
+	text-align: center;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	min-width: 14px;
+}
+
+.ui-pagination>li>a:hover,
+.ui-pagination>li>span:hover,
+.ui-pagination>li>a:focus,
+.ui-pagination>li>span:focus {
+	z-index: 2;
+	color: #cf2d01;
+	border-color: #cf2d01;
+}
+
+.ui-pagination > .active > a,
+.ui-pagination > .active > span,
+.ui-pagination > .active > a:hover,
+.ui-pagination > .active > span:hover,
+.ui-pagination > .active > a:focus,
+.ui-pagination > .active > span:focus {
+	z-index: 2;
+	color: #fff;
+	cursor: default;
+	background-color: #cf2d01;
+	border-color: #cf2d01;
+}
+
+.ui-pagination > .disabled > span,
+.ui-pagination > .disabled > span:hover,
+.ui-pagination > .disabled > span:focus,
+.ui-pagination > .disabled > a,
+.ui-pagination > .disabled > a:hover,
+.ui-pagination > .disabled > a:focus {
+	color: #ccc;
+	cursor: not-allowed;
+	background-color: #fff;
+	border-color: #ddd;
+}
+
+/* 分页主题 */
+.simple-theme>.ui-pagination>li {
+	margin-right: 5px;
+}
+
+.simple-theme>.ui-pagination>li:last-child {
+	margin-right: 0;
+}
