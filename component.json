@@ -4,6 +4,7 @@
   "description": "jq plug pagination",
   "version": "0.1.0",
   "keywords": ["pagination", "jq"],
+  "main": "index.js",
   "files": [
   	"pagination.css",
   	"pagination.js"
