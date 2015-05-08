@@ -6,8 +6,8 @@
   "keywords": ["pagination", "jq"],
   "main": "index.js",
   "files": [
-  	"pagination.css",
-  	"pagination.js"
+  	"index.css",
+  	"index.js"
   ],
   "license": "MIT"
 }
