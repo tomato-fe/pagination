@@ -175,13 +175,13 @@
 	function Plugin(option, params) {
 		var $this = $(this),
 			data  = $this.data('tc.pagination'),
-			options
+			options;
 
-			if (option.currentPage) 
-				option.currentPage = option.currentPage - 1
-			options = $.extend({}, Pagination.defaults, typeof option == 'object' && option)
+		if (option.currentPage) 
+			option.currentPage = option.currentPage - 1
+		options = $.extend({}, Pagination.defaults, typeof option == 'object' && option)
 
-		if (!data) 
+		if (!data || typeof option === 'object')  
 			$this.data('tc.pagination', (data = new Pagination(this, options)) )
 
 		if (typeof option === 'string') 
